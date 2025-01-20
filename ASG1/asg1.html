@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point (1)</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400" style="border:1px solid #000000">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <img width="400" height="400" src="IMG_9408.jpg"/>
+    
+
+
+
+    <p id = "numdot">XXX</p>
+
+    <div class="controls">
+      <button id="clearCanvas">Clear Canvas</button>
+      <div>
+        <span>Drawing Mode:</span>
+        <button id="pointMode">Point</button>
+        <button id="triangleMode">Triangles</button>
+        <button id="circleMode">Circles</button>
+        <button id="createTree">Create Tree</button>
+      </div>
+      <div>
+        <span>Shape Color:</span>
+      </div>
+      <div>
+        <label for="redRange">Red:</label>
+        <input type="range" id="redRange" min="0" max="100" value="0" class="slider ">
+        <label for="greenRange">Green:</label>
+        <input type="range" id="greenRange" min="0" max="100" value="0" class = "slider">
+        <label for="blueRange">Blue:</label>
+        <input type="range" id="blueRange" min="0" max="100" value="0" class = "slider">
+      </div>
+ 
+      <div>
+        <label for="sizeRange">Shape Size:</label>
+        <input type="range" id="sizeRange" min="10" max="100" value="20">
+        <label for="segmentRange">Circle Segments:</label>
+        <input type="range" id="segmentRange" min="3" max="20" value="10">
+      </div>
+    </div>
+
+
+    
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="asg1.js"></script>
+    <script src="Points.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+  </body>
+</html>
